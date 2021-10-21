@@ -1,0 +1,97 @@
+.image {
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  /* box-sizing: border-circle; */
+  border-radius: 50%;
+  box-shadow: 0 0 2px 3px rgba(235, 235, 235, 0.9);
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.leftSide {
+  display: "flex";
+  flex: 0.7;
+  flex-direction: "column";
+}
+
+.loginImages {
+  display: "flex";
+  flex: 0.5;
+  flex-direction: "row";
+}
+
+.BigSignIn {
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  font-weight: 300;
+}
+
+.LittleSignIn {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  font-weight: 100;
+  color: #bababa;
+}
+
+input,
+label {
+  display: flex;
+  flex: 1;
+}
+
+.loginInput {
+  display: "flex";
+  flex: 1;
+  align-items: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 600px;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: x-small;
+  font-weight: bolder;
+}
+
+input {
+  margin-bottom: 40px;
+  margin-top: 5px;
+  width: 600px;
+  height: 32px;
+  border: 2px solid #ced4da;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+line {
+  display: inline;
+}
+
+.submitButton {
+  display: "flex";
+  width: 200px;
+  text-align: center;
+}
+
+.submitDiv {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.rightLine {
+  width: 45%;
+  text-align: left;
+  margin-left: 0;
+}
+
+.leftLine {
+  width: 45%;
+  text-align: left;
+  margin-left: 55%;
+}
