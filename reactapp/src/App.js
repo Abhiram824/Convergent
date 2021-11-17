@@ -2,6 +2,7 @@ import "./App.css";
 import SoftwareCard from "./recommendations/SoftwareCard.js";
 import Login from "./login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
+import ReviewForm from "./ReviewForm/ReviewForm.js"
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -26,7 +27,7 @@ function App() {
       <Navbar />
       <div className="App-body">
         {/* <SoftwareCard/> */}
-        <Login></Login>
+        <ReviewForm></ReviewForm>
 
       </div>
     </div>
