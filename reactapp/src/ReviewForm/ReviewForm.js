@@ -4,9 +4,10 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
-import UploadIcon from '@mui/icons-material/Upload';
 import { withStyles } from '@mui/styles';
-import { collection, doc, addDoc } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from '../App.js';
+
 
 export default function ReviewForm(props) {
     const [value, setValue] = React.useState(0);
@@ -42,14 +43,14 @@ export default function ReviewForm(props) {
       const [Tags, setTags] = useState('')
       const [Comments, setComments] = useState('')
 
-      const handleSubmit = (e) => {
+      const handleSubmit = async (e) => {
         e.preventDefault()
 
         if(SoftwareName && SoftwareName && Positives && Negatives && value){
-          console.log(SoftwareName, SoftwareType, Positives, Negatives, Tips, Tags, Comments, Value)
+          console.log(SoftwareName, SoftwareType, Positives, Negatives, Tips, Tags, Comments, value)
         }
         const docRef = await addDoc(collection(db, "Reviews"), {
-          timestamp: severTimestamp(),
+          /*timestamp: severTimestamp(),*/
           SoftwareName: SoftwareName,
           SoftwareType: SoftwareType,
           Postives: Positives,
