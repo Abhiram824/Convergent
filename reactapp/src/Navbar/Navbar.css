@@ -31,5 +31,5 @@
 
 .nav-links:hover {
     color: #2B7A78;
-    ;
+    text-decoration: underline;
 }

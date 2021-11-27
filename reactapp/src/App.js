@@ -2,6 +2,8 @@ import "./App.css";
 import SoftwareCard from "./recommendations/SoftwareCard.js";
 import Login from "./login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
+import Header from "./LandingPage/Header.js";
+import MainPage from "./LandingPage/MainPage.js";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -23,10 +25,12 @@ const app = initializeApp(firebaseConfig);
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header />
       <div className="App-body">
         {/* <SoftwareCard/> */}
-        <Login></Login>
+        <MainPage /> 
+       {/* <Login></Login>*/}
 
       </div>
     </div>
