@@ -4,6 +4,7 @@ import Login from "./login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
 import Header from "./LandingPage/Header.js";
 import MainPage from "./LandingPage/MainPage.js";
+import Signup from "./signup/signup.js";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -16,7 +17,7 @@ const firebaseConfig = {
   projectId: "greenlit-be9a8",
   storageBucket: "greenlit-be9a8.appspot.com",
   messagingSenderId: "875696660269",
-  appId: "1:875696660269:web:fa8e970aa5ab2e25087da4"
+  appId: "1:875696660269:web:fa8e970aa5ab2e25087da4",
 };
 
 // Initialize Firebase
@@ -29,9 +30,8 @@ function App() {
       <Header />
       <div className="App-body">
         {/* <SoftwareCard/> */}
-        <MainPage /> 
-       {/* <Login></Login>*/}
-
+        <MainPage />
+        {/* <Login></Login>*/}
       </div>
     </div>
   );
