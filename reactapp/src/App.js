@@ -1,13 +1,13 @@
 import "./App.css";
-import SoftwareCard from "./recommendations/SoftwareCard.js";
+import RecPage from "./recommendations/RecPage.js";
 import Login from "./login/Login.js";
 
 function App() {
   return (
     <div className="App">
       <div className="App-body">
-        {/* <SoftwareCard/> */}
-        <Login></Login>
+        <RecPage></RecPage>
+        {/* <Login></Login> */}
       </div>
     </div>
   );
