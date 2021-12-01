@@ -1,4 +1,3 @@
-import "./ReviewForm.css";
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
@@ -7,6 +6,8 @@ import Button from '@mui/material/Button';
 import { withStyles } from '@mui/styles';
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '../App.js';
+import Navbar from "../Navbar/Navbar.js";
+import { Link } from 'react-router-dom';
 
 
 export default function ReviewForm(props) {
@@ -66,6 +67,7 @@ export default function ReviewForm(props) {
 
 
     return (
+      <div><Navbar />
       <form noValidate autoComplete="off" onSubmit={handleSubmit}>
         <div>
             <div class="BigSignIn">
@@ -138,14 +140,15 @@ export default function ReviewForm(props) {
 
             </div>
 
-          <Button
+          {/* <Button
+          
             style={{
               backgroundColor:"#21b6ae"
             }}
             variant="contained"
             >
               Upload
-          </Button>
+          </Button> */}
 
           <TextField
           onChange={(e) => setComments(e.target.value)}
@@ -159,6 +162,7 @@ export default function ReviewForm(props) {
         </Box>
 
         <Button
+          component={Link} to="/dashboard"
           style={{
             backgroundColor:"#21b6ae"
           }}
@@ -169,5 +173,6 @@ export default function ReviewForm(props) {
         </Button>
     </div>
     </form>
+    </div>
     );
 }

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+  }
+  
+  .selectionSide {
+    flex: 0.25
+  }
+  
+  .cardsSide {
+    flex: 0.75
+  }

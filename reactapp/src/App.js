@@ -1,11 +1,18 @@
 import "./App.css";
-import SoftwareCard from "./recommendations/SoftwareCard.js";
+import React, {useState} from 'react';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import RecPage from "./recommendations/RecPage.js";
 import Login from "./login/Login.js";
 import Navbar from "./Navbar/Navbar.js";
-import ReviewForm from "./ReviewForm/ReviewForm.js"
+import Header from "./LandingPage/Header.js";
+import MainPage from "./LandingPage/MainPage.js";
+import Signup from "./signup/signup.js";
+import Dashboard from "./Dashboard/Dashboard.js";
+import ReviewForm from "./ReviewForm/ReviewForm.js";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,7 +23,7 @@ const firebaseConfig = {
   projectId: "greenlit-be9a8",
   storageBucket: "greenlit-be9a8.appspot.com",
   messagingSenderId: "875696660269",
-  appId: "1:875696660269:web:fa8e970aa5ab2e25087da4"
+  appId: "1:875696660269:web:fa8e970aa5ab2e25087da4",
 };
 
 // Initialize Firebase
@@ -26,11 +33,12 @@ export const db = getFirestore();
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header />
       <div className="App-body">
         {/* <SoftwareCard/> */}
-        <ReviewForm></ReviewForm>
-
+        <MainPage / >
+        {/* <Login></Login> */}
       </div>
     </div>
   );

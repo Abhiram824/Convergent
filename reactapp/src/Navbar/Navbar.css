@@ -9,6 +9,7 @@
 }
 
 .navbar-logo {
+    width : 20vw;
     color: black;
     justify-self: start;
     cursor: pointer;
@@ -16,11 +17,11 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-gap: 100px;
     list-style: none;
     text-align: left;
-    width: 90vw;
+    width: 80vw;
     justify-content: end;
 }
 
@@ -31,5 +32,6 @@
 
 .nav-links:hover {
     color: #2B7A78;
-    ;
+    text-decoration: underline;
 }
+

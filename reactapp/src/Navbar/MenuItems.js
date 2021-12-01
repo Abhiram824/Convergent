@@ -1,22 +1,24 @@
+import { Link } from 'react-router-dom';
+
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: '/Dashboard',
         cName: 'nav-links'
     },
     {
         title: 'Recommendations',
-        url: '#',
+        url: '/Recommendations',
         cName: 'nav-links'
     },
     {
         title: 'Review',
-        url: '#',
+        url: 'ReviewForm',
         cName: 'nav-links'
     },
     {
         title: 'Profile',
-        url: '#',
+        url: '/Dashboard',
         cName: 'nav-links'
     }
 ]

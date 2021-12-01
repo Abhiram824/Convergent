@@ -1,12 +1,15 @@
 import { MenuItems } from "./MenuItems"
 import './Navbar.css'
+//import logo from "./logo.png";
+import logo from "./Greenlit-Logo.png";
 
 export default function Navbar() {
     
 
     return (
         <nav className="NavbarItems"> 
-            <h1 className="navbar-logo">Logo</h1>
+            {/* <h1 className="navbar-logo">￼</h1> */}
+            <img class="navbar-logo" src={logo} alt="logo" />
             <div className="menu-icon"> 
                 
             </div>
@@ -25,6 +28,7 @@ export default function Navbar() {
             </ul>       
 
         </nav>
+        
     )
 
 }

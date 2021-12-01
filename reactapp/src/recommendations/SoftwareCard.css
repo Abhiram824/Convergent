@@ -1,6 +1,58 @@
-.card {
-  background-color:aqua;
-  width: 500px;
-  height: 500px;
+.Card {
+  display: flex;
+  height: 59%;
+  width: 90%;
+  vertical-align: center;
+  padding: 15px;
+}
 
+.Card-icon {
+  text-align: center;
+  border: 10px solid #2B7A78;
+  width: 30%;
+  background-color: #2B7A78;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.Card-info {
+  text-align: left;
+  background-color: #f6f6f8;
+  width: 70%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.Card-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.Card-info-title{
+  width: 20%;
+  display: block;
+  margin-left: 25px;
+  padding-top: 10px;
+}
+
+.technology-name {
+  font-size: 25px;
+  color: #081f32;
+  font-family: 'Montserrat', serif;
+}
+.technology-category {
+  font-size: 20px;
+  color: #6E798C;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Card-info-rating {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 7px;
 }
